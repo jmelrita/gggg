@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body,
+html {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+body {
+    background:#13141c;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+main {
+    padding: 50px 15px;
+}
+
+.wrapper {
+    display: block;
+    padding-top: 50px;
+    text-align: center;
+    min-width: 600px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.title h2,
+.title hr {
+    width: 500px;
+}
+
+.title h2 {
+    display: inline-block;
+    text-align: left;
+}
+
+.title hr {
+    display: block;
+    margin: 5px auto;
+}
+
+.create hr {
+    border: 1px solid #1BA345;
+}
+
+.update hr {
+    border: 1px solid #FEC001;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-size: 15px;
+    font-family: sans-serif;
+    margin: 0 auto;
+    min-width: 600px;
+}
+
+table th,
+table td {
+    padding: 15px 25px;
+    text-align: center;
+}
+
+thead tr {
+    background-color: #2196f3;
+}
+
+thead th {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: #ffffff;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+tbody tr:hover {
+    color: #2196f3;
+}
+
+input {
+    display: block;
+    width: 360px;
+    background: #fff;
+    color: #000;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    border: 0;
+    outline: 0;
+    padding: 15px 25px;
+    font-size: 18px;
+}
+
+.btnReset,
+button {
+    display: block;
+    background: #2196f3;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.btnSearch,
+.btnReset {
+    width: 120px;
+}
+
+.btnReset {
+    background: #FEC001;
+}
+
+.btnCreate,
+.btnUpdate,
+.btnWrapper a,
+.btnAction,
+.btnAction.btnUpdate {
+    display: inline-block;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 2px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.btnWrapper a,
+.btnCreate,
+.btnUpdate {
+    padding: 15px 30px;
+    background: #1BA345;
+}
+
+.btnAction.btnUpdate {
+    margin-right: 5px;
+    background: #FEC001;
+}
+
+.btnDelete {
+    background: #DE3E44;
+}
+
+.btnWrapper a {
+    background: #dddddd;
+    color: #13141c;
+}
+
+.frmCreate,
+.frmUpdate {
+    display: inline-block;
+    margin: 0 auto 20px;
+}
+
+.frmCreate input,
+.frmUpdate input {
+    display: block;
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+.frmCreate button,
+.frmUpdate button {
+    display: block;
+    color: #fefefe;
+}
+
+.frmCreate button {
+    background: #1BA345;
+}
+
+.frmUpdate button {
+    background: #FEC001;
+}
+
+.btnWrapper {
+    display: block;
+    text-align: left;
+}
+
+.btnWrapper button,
+.btnWrapper a {
+    display: inline-block;
+    border-radius: 0;
+}
+
+.btnWrapper button:hover,
+.btnWrapper a:hover {
+    opacity: 0.9;
+}
+
+.msg {
+    position: absolute;
+    top: -60px;
+    left: calc(50% - 200px);
+    padding: 20px;
+    color: #fefefe;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    width: 400px;
+    text-align: center;
+    animation: hideDiv 2.5s ease;
+}
+
+@keyframes hideDiv {
+    0%   { top: -60px; }
+    10%  { top: 20px; }
+    90%  { top: 20px; }
+    100% { top: -60px; }
+}
+
+.msg-create {
+    background: #1BA345;
+}
+
+.msg-update {
+    background: #FEC001;
+}
+
+.msg-delete {
+    background: #DE3E44;
+}
